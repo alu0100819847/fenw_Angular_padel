@@ -1,0 +1,14 @@
+.formDiv{
+  margin: 20px;
+  border: 1px solid;
+  border-color: blue;
+  box-shadow: 0 0 20px #8475758c;
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.list{
+  border: 1px solid;
+  border-color: blue;
+  box-shadow: 0 0 20px #8475758c;
+}

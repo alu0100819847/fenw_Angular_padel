@@ -1,0 +1,24 @@
+.mynav{
+  background-color: blue;
+}
+
+.install{
+  margin-top: 50px;
+}
+
+.map{
+  box-shadow: 0 0 20px #8475758c;
+  max-width: 80vh;
+  padding: 20px;
+}
+
+.installInfo{
+  border: 1px ;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #8475758c;
+  padding: 20px;
+}
+
+.title{
+  background-color: #0c14f545;
+}

@@ -1,0 +1,28 @@
+.actividades{
+  background-color: #ff000040;
+}
+
+.instalaciones{
+  background-color: #a52a2a4f;
+}
+
+.torneos{
+  background-color: #0c14f545;
+}
+
+.reservas{
+  background: #ffff014d;
+}
+
+.imagen{
+  width: 100%;
+  height: 30vw;
+}
+
+.content_info{
+  border: 1px ;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #8475758c;
+  padding: 3px;
+  padding-left: 10px;
+}

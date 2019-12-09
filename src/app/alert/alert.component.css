@@ -1,0 +1,15 @@
+.content_info{
+  border: 1px ;
+  border-radius: 5px;
+  box-shadow: 0 0 20px #8475758c;
+  padding: 3px;
+  padding-left: 10px;
+}
+
+.err{
+   background-color: #ff000040;
+ }
+
+.done{
+  background-color: #31ff014d;
+}

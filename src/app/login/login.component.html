@@ -1,0 +1,39 @@
+<div class="row justify-content-md-center ">
+  <div class="formDiv">
+    <div class="title">
+      <h1>Login</h1>
+      <hr/>
+    </div>
+    <form class="myForm">
+      <div class="form-group">
+        <label for="userReg">User</label>
+          <input type="text" class="form-control" id="userReg" [(ngModel)] = "username" name="username" placeholder="User">
+          <small id="userRegHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="passwordReg">Password</label>
+        <input type="password" class="form-control" id="passwordReg" [(ngModel)] = "password" name="password" placeholder="Pasword">
+        <small id="passwordRegHelp" class="form-text text-muted">{{err}}</small>
+      </div>
+      <br/><br/>
+      <button id="regButton" type="button" (click) = loginUser() class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-4 list">
+    <div class="row">
+      <div class="col-sm-6 text-center">
+        <h6>Username</h6>
+        <hr/>
+        {{username}}
+      </div>
+      <div class="col-sm-6 text-center">
+        <h6>Password</h6>
+        <hr/>
+        {{password}}
+      </div>
+    </div>
+
+  </div>
+</div>

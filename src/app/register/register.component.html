@@ -1,0 +1,38 @@
+<div class="row justify-content-md-center ">
+  <div class="formDiv">
+    <div class="title">
+      <h1> Register</h1>
+      <hr/>
+    </div>
+    <form class="myForm">
+      <div class="form-group">
+        <label for="userReg">User</label>
+        <input type="text"   class="form-control" id="userReg" (blur)="userExists()" [(ngModel)] = "user.username" name="username" placeholder="User" #username required>
+        <small id="userRegHelp" class="form-text text-muted">{{userError}}</small>
+      </div>
+      <div class="form-group">
+        <label for="emailReg">Email</label>
+        <input type="email" class="form-control" id="emailReg" [(ngModel)] = "user.email" name="email" placeholder="xxxx@xxx.xx" required>
+        <small id="emailRegHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="passwordReg">Password</label>
+        <input type="password" class="form-control" id="passwordReg" [(ngModel)] = "user.password" name="password" placeholder="Pasword" #password required>
+        <small id="passwordRegHelp" class="form-text text-muted"></small>
+      </div>
+      <div class="form-group">
+        <label for="rePasswordReg">Re Password</label>
+        <input type="password" class="form-control" id="rePasswordReg" [(ngModel)] = "repassword" name="repassword" placeholder="Pasword" required>
+        <small id="rePasswordRegHelp" class="form-text text-muted"><p *ngIf="validated">La contraseña no coincide.</p></small>
+      </div>
+      <label for="reBirthDateReg">Nacimiento</label>
+
+      <div class="input-group date form-group">
+        <br/>
+        <ngb-datepicker #d [(ngModel)] = "date" name="pay" id="reBirthDateReg" [(ngModel)] = "date" name="reBirthDateReg" required></ngb-datepicker>
+      </div>
+      <br/><br/>
+      <button id="regButton" type="button" (click) = createUser() class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
